@@ -1,8 +1,9 @@
 #include "pch.h"
 #include "CppUnitTest.h"
+#include <string.h>
 
 extern "C" {
-#include "../Assignment 4/library.h"
+#include "..//Assignment 4/library.h"
 }
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
