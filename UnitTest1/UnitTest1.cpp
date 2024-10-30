@@ -16,7 +16,7 @@ namespace UnitTest1
 		TEST_METHOD(Player1Wins_RockVsScissors)
 		{
 			const char* result = determine_winner("Rock", "Scissors");
-			Assert::AreEqual( "Player1", result);
+			Assert::AreEqual("Player1", result);
 		}
 		TEST_METHOD(Player2Wins_ScissorsVsRock)
 		{
@@ -27,6 +27,11 @@ namespace UnitTest1
 		{
 			const char* result = determine_winner("Rock", "Rock");
 			Assert::AreEqual("Draw", result);
+		}
+		TEST_METHOD(Invalid_Input)
+		{
+			const char* result = determine_winner("Rock", "MKBHD");
+			Assert::AreEqual("Invalid", result);
 		}
 	
 	};
